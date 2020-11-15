@@ -1,0 +1,53 @@
+﻿<Window x:Class="calc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="476" Width="968" Background="#CACACB">
+    <Grid Margin="0,0,-1,1" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.137"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="503*"/>
+            <ColumnDefinition Width="458*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Content="7" HorizontalAlignment="Left" Margin="119,153,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"  FontSize="20"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="188,153,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"  FontSize="20"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="257,153,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"  FontSize="20"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="119,199,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"  FontSize="20"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="188,199,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"  FontSize="20"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="257,199,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"  FontSize="20"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="119,245,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"  FontSize="20"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="188,245,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"  FontSize="20"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="257,245,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"  FontSize="20"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="119,291,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"   FontSize="20"/>
+        <Button Content="," HorizontalAlignment="Left" Margin="188,291,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="buttonClickNumeral"  FontSize="20"/>
+        <Button Content="="  HorizontalAlignment="Left" Margin="257,291,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="Execute" FontWeight="Bold" FontSize="20" Background="#BFBFBF" BorderThickness="2"/>
+        <Button Content="÷" Name="D" HorizontalAlignment="Left" Margin="320,153,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="20"/>
+        <Button Content="-" Name="S" HorizontalAlignment="Left" Margin="320,199,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="20"/>
+        <Button Content="+" Name="A" HorizontalAlignment="Left" Margin="320,245,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="20"/>
+        <Button Content="n√a" Name ="P" HorizontalAlignment="Left" Margin="320,291,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="15"/>
+        <TextBlock  x:Name="Result"  HorizontalAlignment="Left" Height="57" Margin="119,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"  Background="#F0EFEF" FontSize="25" LineHeight="15" />
+        <Button Content="CE" Name="CE" HorizontalAlignment="Left" Margin="119,107,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="TextRemoving" FontWeight="Bold" FontSize="15"/>
+        <Button Content="C" Name="C" HorizontalAlignment="Left" Margin="188,107,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="TextRemoving" FontWeight="Bold" FontSize="15"/>
+        <Button Content="e^x" Name="PN" HorizontalAlignment="Left" Margin="257,107,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="15"/>
+        <Button Content="x^y" Name="PX" HorizontalAlignment="Left" Margin="320,107,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="15"/>
+        <Button Content="*" Name="M" HorizontalAlignment="Left" Margin="320,337,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="20"/>
+        <CheckBox Content="Pokaż historie" HorizontalAlignment="Left" Height="19" Margin="501,25,0,0" VerticalAlignment="Top" Width="112" Checked="CheckBox_Checked" Unchecked="CheckBox_UnChecked" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <Button Content="LOG a(b)" x:Name="LOG" HorizontalAlignment="Left" Margin="245,337,0,0" VerticalAlignment="Top" Width="57" Height="41" Click="ButtonClickOperation" FontWeight="Bold"/>
+        <ListBox HorizontalAlignment="Left" Name="display" Height="333" Visibility="Hidden" Margin="501,49,0,0" VerticalAlignment="Top" Width="305" SelectionChanged="ListBox_SelectionChanged" Grid.ColumnSpan="2" FontSize="17" Background="#D7D7D7" BorderBrush="#D7D7D7"  />
+        <Button Content="Wyczyść" HorizontalAlignment="Left" Height="19" Margin="110,22,0,0" VerticalAlignment="Top" Width="64" Click="Clearing" Grid.Column="1" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
