@@ -41,7 +41,7 @@
         <TextBlock  x:Name="Result"  HorizontalAlignment="Left" Height="57" Margin="119,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"  Background="#F0EFEF" FontSize="25" LineHeight="15" />
         <Button Content="CE" Name="CE" HorizontalAlignment="Left" Margin="119,107,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="TextRemoving" FontWeight="Bold" FontSize="15"/>
         <Button Content="C" Name="C" HorizontalAlignment="Left" Margin="188,107,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="TextRemoving" FontWeight="Bold" FontSize="15"/>
-        <Button Content="e^x" Name="PN" HorizontalAlignment="Left" Margin="257,107,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="15"/>
+        <Button Content="e^x" Name="EXP" HorizontalAlignment="Left" Margin="257,107,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="15"/>
         <Button Content="x^y" Name="PX" HorizontalAlignment="Left" Margin="320,107,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="15"/>
         <Button Content="*" Name="M" HorizontalAlignment="Left" Margin="320,337,0,0" VerticalAlignment="Top" Width="45" Height="41" Click="ButtonClickOperation" FontWeight="Bold" FontSize="20"/>
         <CheckBox Content="Pokaż historie" HorizontalAlignment="Left" Height="19" Margin="501,25,0,0" VerticalAlignment="Top" Width="112" Checked="CheckBox_Checked" Unchecked="CheckBox_UnChecked" Grid.ColumnSpan="2" FontWeight="Bold"/>
