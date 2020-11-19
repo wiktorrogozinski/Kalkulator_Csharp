@@ -1,3 +1,3 @@
 <b>Kalkulator_Csharp</b>
-Cały folder repozytorium można pobrać postępując wedlle następujących kroków:
-  CODE -> Download ZIP
+<p>Cały repozytorium można pobrać postępując wedlle następujących kroków: </p>
+ <p> CODE -> Download ZIP </p>
